@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<h4>>, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+    }
+    h4{
+        text-align: center;
+        background-color: rgb(191, 122, 255);
+        color:rgb(255, 255, 255);
+        padding-top:30px;
+        font-size:40px;
+        padding-bottom:30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        max-height: 100px;
+    }
+    .container{
+        max-width: 50%;
+        margin: auto;
+        max-height:50% ;
+        margin-top:200px;
+        border: 4px solid blueviolet; 
+        background-color: rgba(129, 129, 129,0.3);
+    }
+    .form-1{
+        text-align: center;
+        font-weight: bold;
+        font-size:30px;
+    }
+    input{
+        font-size: 20px;
+        margin:10px;
+        background-color:rgba(129, 129, 129,0);
+        border-color:purple;
+        text-align:center;
+        color:black;
+        font-weight: bold;
+    }
+    .parent-container{ 
+            box-sizing: border-box;
+            margin-top: 0px;
+    }
+    body{
+        background-image:url(reg.jpg);
+        background-repeat: no-repeat ;
+        background-size: cover;
+    }
+    .header{
+         display:flex;
+         flex-direction: row;
+         background-color: lightblue;
+         height: 30px;
+         text-align: center;
+         background-color:rgba(129, 129, 129,0.5);
+    }
+    .header a{
+        text-decoration: none;
+        flex:33.33%;
+       
+    }
+     a:hover{
+        background-color: rgb(142, 223, 255);
+    }
+    select{
+        width:300px;
+        height: 40px;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgba(129,129,129,0.5);
+    }
+    h5{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 50px;
+    }
+    ::placeholder{
+        color:whitesmoke;
+    }
+</style>
+</head>
+<body>
+    <h4>Experience The Best MUSIC</h4>
+    <h5>“I don’t sing because I’m happy; I’m happy because I sing.” – William James</h5>
+    <div class="parent-container">
+        <div class="container">
+            <form class="form-1">
+                <header class="header">
+                  <a href="./Registration.html">Personal details</a>
+                  <a href="./Authenticate.html">Authenticate</a>
+                  <a href="./payment.html">payment Details</a>
+                </header>
+                <hr/>
+              
+              <select name="bank">
+                <option value="BANK">Select Bank</option>
+                  <option value="ICICI">ICICI</option>
+                  <option value="ICICI">SBI</option>
+                  <option value="ICICI">BOI</option>
+                  <option value="ICICI">PNB</option>
+                  <option value="ICICI">HDFC</option>
+              </select><br>
+              <p> Enter account number</p>
+              <input type="number" name="acc" placeholder="Account No.">
+              <p>Enter IFSC code</p>
+              <input type="text" placeholder="IFSC code"><br>
+              <input type="button" value="submit" style="background-color:azure;color:black">  <input type="reset" value="reset" style="background-color:azure;color:black;">            
+            </form>
+        </div>
+    </div>
+</body>
+</html>
